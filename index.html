@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="2015 bbPress Survey Results">
+	<meta name="author" content="Mercime for bbPress.org">
+	<meta name="keywords" content="bbPress, bbPress.org, survey, survey results">
+	<title>bbPress 2015 Survey Results</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+	<script src="js/modernizr.min.js"></script>
+	<script src="js/d3.min.js"></script>
+</head>
+
+<body>
+	<div class="warning"><noscript>For full functionality of this page, it is necessary to enable JavaScript in your web browser. Following are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions on how to enable JavaScript in your web browser</a>. Or, if you are using Internet Explorer, click on button to "Allow blocked content" to view the graphs. It's quite safe :)  <br /><br />If you prefer not to enable Javascript, you can go <a href="http://bbpress.org/blog">back to the 2015 bbPress Survey Report</a> page and read the report instead.</noscript></div>
+
+	<div id="bbpress" class="hfeed site">
+		<div id="header" class="row index">
+			<header class="represent">
+				<h1 class="title"><img src="images/bbpress.png" class="logo" alt="bbPress Logo" /> 2015 Survey Results</h1>
+			</header>
+		</div><!-- #header -->
+
+		<main id="content" class="main-content">
+
+			<section class="row gen-info">
+				<header class="entry-header">
+					<h2 class="entry-title gen">General Information</h2>
+				</header>
+				<div id="geninfo" class="block">
+					<div class="row">
+						<div class="grid col12">
+							<article class="box">
+								<header>
+									<div class="panel-title">
+										<img class="fa" alt="globe" src="svg/globe.svg" onerror="this.src='svg/globe.png'; this.onerror=null;">
+										<h3>213 Survey Participants from 41 Countries</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<ul class="countries row">
+										<li class="icon australia"> Australia</li>
+										<li class="icon austria"> Austria</li>
+										<li class="icon brazil"> Brazil</li>
+										<li class="icon canada"> Canada</li>
+										<li class="icon czech-republic"> Czech Republic</li>
+										<li class="icon denmark"> Denmark</li>
+										<li class="icon finland"> Finland</li>
+										<li class="icon france"> France</li>
+										<li class="icon germany"> Germany</li>
+										<li class="icon greece"> Greece</li>
+										<li class="icon hungary"> Hungary</li>
+										<li class="icon india"> India</li>
+										<li class="icon iran"> Iran</li>
+										<li class="icon ireland"> Ireland</li>
+										<li class="icon israel"> Israel</li>
+										<li class="icon italy"> Italy</li>
+										<li class="icon latvia"> Latvia</li>
+										<li class="icon luxembourg"> Luxembourg</li>
+										<li class="icon malaysia"> Malaysia</li>
+										<li class="icon mexico"> Mexico</li>
+										<li class="icon netherlands"> Netherlands</li>
+										<li class="icon new-zealand"> New Zealand</li>
+										<li class="icon philippines"> Philippines</li>
+										<li class="icon poland"> Poland</li>
+										<li class="icon romania"> Romania</li>
+										<li class="icon russia"> Russia</li>
+										<li class="icon serbia"> Serbia</li>
+										<li class="icon singapore"> Singapore</li>
+										<li class="icon slovakia"> Slovakia</li>
+										<li class="icon slovenia"> Slovenia</li>
+										<li class="icon spain"> Spain</li>
+										<li class="icon sweden"> Sweden</li>
+										<li class="icon switzerland"> Switzerland</li>
+										<li class="icon turkey"> Turkey</li>
+										<li class="icon ukraine"> Ukraine</li>
+										<li class="icon united-arab-emirates"> United Arab Emirates</li>
+										<li class="icon united-kingdom"> United Kingdom</li>
+										<li class="icon united-states"> United States</li>
+										<li class="icon venezuela"> Venezuela</li>
+										<li class="icon vietnam"> Vietnam</li>
+										<li class="icon yemen"> Yemen</li>
+									</ul>
+								</div><!-- .panel-content -->
+							</article>
+						</div><!-- .col12 -->
+						<div class="grid col4 start">
+							<article class="gender">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/users.svg" alt="users" onerror="this.src='svg/users.png'; this.onerror=null;">
+										<h3>Gender</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content genders">
+									<dl class="genders clearfix">
+										<dt>Male</dt>
+											<dd><span class="bar w8700"><em class="percent">87 %</em></span></dd>
+										<dt>Female</dt>
+											<dd><span class="bar w0800"><em class="percent">8 %</em></span></dd>
+										<dt>Gender not listed here</dt>
+											<dd><span class="bar w0400"><em class="percent">4 %</em></span></dd>
+										<dt>Prefer not to disclose</dt>
+											<dd><span class="bar w0100"><em class="percent">1 %</em></span></dd>
+									</dl>
+								</div><!-- .panel-content -->
+							</article>
+						</div>	<!-- .col4 -->
+						<div class="grid col4">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/map-marker.svg" alt="map marker" onerror="this.src='svg/map-marker.png'; this.onerror=null;">
+										<h3>Top Countries Represented</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content" id="top-countries">
+									<ol class="top-countries">
+										<li>United States: 31%</li>
+										<li>United Kingdom: 9%</li>
+										<li>Germany: 7%</li>
+										<li>Spain: 6%</li>
+										<li>Netherlands: 5%</li>
+										<li>Greece &amp; France: 4%</li>
+										<li>Italy, Brazil, &amp; Australia: 3%</li>
+										<li>Denmark,Canada, India &amp; Austria: 2%</li>
+									</ol>
+								</div><!-- .panel-content -->
+							</article>
+						</div><!-- .col4 -->
+						<div class="grid col4 end">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/compass.svg" alt="compass" onerror="this.src='svg/compass.png'; this.onerror=null;">
+										<h3>Top U.S. States Represented</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content" id="top-states">
+									<ol class="top-states">
+										<li>New York: 13%</li>
+										<li>Texas: 12%</li>
+										<li>New Jersey &amp; California: 7%</li>
+										<li>Georgia: 6%</li>
+										<li>Wisconsin, Virginia, Colorado, &amp; Florida: 4%</li>
+										<li>Pennsylvania, Minnesota, Indiana, &amp; Illinois: 3%</li>
+									</ol>
+								</div><!-- .panel-content -->
+							</article>
+						</div><!-- .col4 -->
+					</div><!-- .row -->
+				</div><!-- #geninfo -->
+			</section><!-- .gen-info -->
+
+			<section class="row your-sites">
+				<header class="entry-header">
+					<h2 class="entry-title">Your bbPress Installations</h2>
+				</header><!-- .entry-header -->
+
+				<div id="yoursites" class="block">
+					<div class="row">
+						<div class="col12">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/sun-o.svg" alt="map marker" onerror="this.src='svg/sun-o.png'; this.onerror=null;">
+										<h3>bbPress Versions Then and Now</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<div class="grid col12 down">
+										<table class="rwd-table">
+											<thead>
+												<tr>
+													<th scope="col">Usage</th>
+													<th scope="col">bbPress &#x2264; 1.0+</th>
+													<th scope="col">bbPress 2.0+</th>
+													<th scope="col">bbPress 2.1+</th>
+													<th scope="col">bbPress 2.2+</th>
+													<th scope="col">bbPress 2.3+</th>
+													<th scope="col">bbPress 2.4+</th>
+													<th scope="col">bbPress 2.5+</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td data-th="Usage">2015 - Version Used First</td>
+													<td class="highlight" data-th="bbPress &#x2264; 1.0+">27%</td>
+													<td data-th="bbPress 2.0+">22%</td>
+													<td data-th="bbPress 2.1+">4%</td>
+													<td data-th="bbPress 2.2+">7%</td>
+													<td data-th="bbPress 2.3+">10.5%</td>
+													<td data-th="bbPress 2.4+">13%</td>
+													<td data-th="bbPress 2.5+">16.5%</td>
+												</tr>
+												<tr>
+													<td data-th="Usage">2014 - Version Used First</td>
+													<td class="highlight" data-th="bbPress &#x2264; 1.0+">34%</td>
+													<td data-th="bbPress 2.0+">20%</td>
+													<td data-th="bbPress 2.1+">6%</td>
+													<td data-th="bbPress 2.2+">3%</td>
+													<td data-th="bbPress 2.3+">10%</td>
+													<td data-th="bbPress 2.4+">9%</td>
+													<td data-th="bbPress 2.5+">18%</td>
+												</tr>
+												<tr>
+													<td data-th="Usage">2015 - Version Using Now</td>
+													<td data-th="bbPress &#x2264; 1.0+">3%</td>
+													<td data-th="bbPress 2.0+">0.1%</td>
+													<td data-th="bbPress 2.1+">2%</td>
+													<td data-th="bbPress 2.2+">2.5%</td>
+													<td data-th="bbPress 2.3+">3.5%</td>
+													<td data-th="bbPress 2.4+">8%</td>
+													<td class="highlight" data-th="bbPress 2.5+">90%</td>
+												</tr>
+												<tr>
+													<td data-th="Usage">2014 - Version Using Now</td>
+													<td data-th="bbPress &#x2264; 1.0+">5%</td>
+													<td data-th="bbPress 2.0+">2%</td>
+													<td data-th="bbPress 2.1+">1%</td>
+													<td data-th="bbPress 2.2+">1%</td>
+													<td data-th="bbPress 2.3+">3%</td>
+													<td data-th="bbPress 2.4+">10%</td>
+													<td class="highlight" data-th="bbPress 2.5+">88%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!-- .col12 -->
+								</div>
+							</article>
+						</div><!-- .col12 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col6">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>WordPress Versions Used</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="wp-version-now clearfix">
+										<dt>WordPress 4.2+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w9570"><em class="percent">96%</em></span></dd>
+										<dt>WordPress 4.1+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0670"><em class="percent">6.70%</em></span></dd>
+										<dt>WordPress 4.0+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0250"><em class="percent">2.5%</em></span></dd>
+										<dt>WordPress 3.9+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0150"><em class="percent">1.5%</em></span></dd>
+										<dt>WordPress  3.7+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0050"><em class="percent">0.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0500"><em class="percent">5%</em></span></dd>
+										<dt>WordPress  3.4+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0050"><em class="percent">0.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0000"><em class="percent">0</em></span></dd>
+										<dt>WordPress 3.8+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0000"><em class="percent">0</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w9800"><em class="percent">98%</em></span></dd>
+										<dt>WordPress  3.6+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0000"><em class="percent">0</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+										<dt>WordPress  3.5+</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0000"><em class="percent">0</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0100"><em class="percent">1%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+						<div class="grid col6 end">
+							<article class="setup">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/check-square-o.svg" alt="check mark" onerror="this.src='svg/check-square-o.png'; this.onerror=null;">
+										<h3>Setting Up bbPress</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+								<dl class="bbp-setup">
+									<dt>Easy</dt>
+										<dd><em class="year">2015: </em> <span class="bar w4800"><em class="percent">48%</em></span></dd>
+										<dd><em class="year">2014: </em> <span class="past bar w4600"><em class="percent">46%</em></span></dd>
+									<dt>Very Easy</dt>
+										<dd><em class="year">2015: </em> <span class="bar w2500"><em class="percent">25%</em></span></dd>
+										<dd><em class="year">2014: </em> <span class="past bar w2900"><em class="percent">29%</em></span></dd>
+									<dt>Neutral</dt>
+										<dd><em class="year">2015: </em> <span class="bar w1800"><em class="percent">18%</em></span></dd>
+										<dd><em class="year">2014: </em> <span class="past bar w1600"><em class="percent">16%</em></span></dd>
+									<dt>Hard</dt>
+										<dd><em class="year">2015: </em> <span class="bar w0800"><em class="percent">8%</em></span></dd>
+										<dd><em class="year">2014: </em> <span class="past bar w0700"><em class="percent">7%</em></span></dd>
+									<dt>Very Hard</dt>
+										<dd><em class="year">2015: </em> <span class="bar w0100"><em class="percent">1%</em></span></dd>
+										<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+								</dl>
+
+								</div><!-- .panel-content -->
+							</article>
+							<div class="shadow-box">
+								<h3>Platform Used @ Survey</h3>
+								<p class="shadow-box">Unknown: (36.6%), Mac OS X (30%), Windows (15%), Linux (8.5%), iOS (6.6%), Win7 (2.3%), Android (0.5%), and WinXP (0.5%)</p>
+							</div>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col6">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/users.svg" alt="users" onerror="this.src='svg/users.png'; this.onerror=null;">
+										<h3>bbPress Users</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="bbp-user clearfix">
+										<dt>I use bbPress for my own site.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w5100"><em class="percent">51%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5800"><em class="percent">58%</em></span></dd>
+										<dt>I create sites with bbPress forums for others.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3000"><em class="percent">30%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2500"><em class="percent">25%</em></span></dd>
+										<dt>I am a Keymaster of a bbPress forums community.	</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0500"><em class="percent">5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0400"><em class="percent">4%</em></span></dd>
+										<dt>I am an advanced bbPress developer - I can do anything bbPress.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0500"><em class="percent">5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0400"><em class="percent">4%</em></span></dd>
+										<dt>I have never used bbPress, but am considering it.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0400"><em class="percent">4%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+										<dt>I create themes with support for bbPress forums.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0300"><em class="percent">3%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0400"><em class="percent">4%</em></span></dd>
+										<dt>I create bbPress plugins.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0100"><em class="percent">1%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+										<dt>I am a member of a bbPress forums community.</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0100"><em class="percent">1%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0100"><em class="percent">1%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div>
+						<div class="grid col6 end">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>bbPress Forums Installations</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="bbp-wp clearfix">
+										<dt>WP in domain root</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7400"><em class="percent">74%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7200"><em class="percent">72%</em></span></dd>
+										<dt>WP in physical subdirectory folder</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3400"><em class="percent">34%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2000"><em class="percent">20%</em></span></dd>
+										<dt>WP in physical subdomain</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1500"><em class="percent">15%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>WP multisite - domain root</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1300"><em class="percent">13%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1300"><em class="percent">13%</em></span></dd>
+										<dt>WP multisite - sitewide</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1000"><em class="percent">10%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1300"><em class="percent">13%</em></span></dd>
+										<dt>WP multisite - one subdomain subsite</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0800"><em class="percent">8%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0600"><em class="percent">6%</em></span></dd>
+										<dt>WP multisite - one subdirectory subsite</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0800"><em class="percent">8%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>WP multisite - multiple networks</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0500"><em class="percent">5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0700"><em class="percent">7%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+
+						</div>
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col6">
+							<article class="words pie">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/dot-circle-o.svg" alt="circle dot" onerror="this.src='svg/dot-circle-o.png'; this.onerror=null;">
+										<h3>bbPress in Your Language</h3>
+										<img class="fa right" src="svg/search-plus.svg" alt="magnifying glass" onerror="this.src='svg/search-plus.png'; this.onerror=null;">
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<div id="languages">
+										<figure>
+											<img src="images/bbp-lang.gif" alt="Visualization of languages used in bbPress forums." /><br />
+											<figcaption><strong>Top Ten</strong>: English (74%), German (7%), French (6.5%), Spanish (6%), Portuguese (5%), Italian (4%), Dutch &amp; Greek (3%), Swedish &amp; Danish (2%), Chinese, Czech, Finnish, Norwegian, &amp; Polish (1%), and Arabic, Croatian, Hebrew, Hungarian, Japanese, Persian, Russian, Serbian, Slovak, Slovenian, Turkish, &amp; Vietnamese (0.5%)</figcaption>
+										</figure>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="grid col6 end">
+							<article class="words pie">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/dot-circle-o.svg" alt="circle dot" onerror="this.src='svg/dot-circle-o.png'; this.onerror=null;">
+										<h3>bbPress Forums Site Types</h3>
+										<img class="fa right" src="svg/search-plus.svg" alt="magnifying glass" onerror="this.src='svg/search-plus.png'; this.onerror=null;">
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<div id="sitetypes">
+										<figure>
+											<img src="images/bbp-types.gif" alt="Visualization of types of sites using bbPress forums." /><br />
+											<figcaption><strong>Top Ten</strong>: Generic (40%), Technical (28%), Business (28%), Non-profit(25%), Gaming (14%), Artistic (8%), Scientific(6%), Academic(14%), Religious (2%), Community, Fan Site, Genealogical, Magazine, Media, Music, Political, Self help, &amp; Travel (1%).</figcaption>
+										</figure>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col12">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/share-alt.svg" alt="map marker" onerror="this.src='svg/share-alt.png'; this.onerror=null;">
+										<h3>How Did You Find Out About This Survey?</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<div class="grid col12 found-how">
+										<div class="grid col3 bbpp">
+											<h4>bbPress: 51%</h4>
+											<div class="pie-wrap">
+												<div class="svg-container">
+													<img src="svg/bblead.svg" alt="Chart of bbPress" onerror="this.src='svg/bblead.png'; this.onerror=null;">
+												</div>
+											</div>
+
+										</div>	<!-- .col4 -->
+										<div class="grid col3 second">
+											<h4>WP Tavern: 29%</h4>
+											<div class="pie-wrap">
+												<div class="svg-container">
+													<img src="svg/wplead.svg" alt="Chart of WP Tavern" onerror="this.src='svg/wplead.png'; this.onerror=null;">
+												</div>
+											</div>
+										</div>	<!-- .col4 -->
+										<div class="grid col6 mentions end">
+													<h4>Honorable Mentions: 20%</h4>
+													<p>&bull; The Whip Newsletter WPMUDev (7%)<br/>
+													&bull; make.wordpress.org/support and Google Search Results (2%)<br/>
+													&bull; Email and Slack (1.5%)<br/>
+													&bull; WP Greek Community, Better Planet, bpdevel.wordpress.com (1%)<br/>
+													&bull; Automattic, fastwp.de, Feed, Friend, managewp.com, WordPress Planet.<br/>
+													&bull; Thank you all.
+													</p>
+										</div>	<!-- .col4 -->
+									</div><!-- .col12 -->
+								</div>
+							</article>
+						</div><!-- .col12 -->
+					</div><!-- .row -->
+
+				</div><!-- #yoursites  -->
+			</section><!-- .your-sites -->
+
+			<section class="row features-participation">
+				<header class="entry-header">
+					<h2 class="entry-title">Features &amp; Participation</h2>
+				</header><!-- .entry-header -->
+
+				<div id="features-participation" class="block">
+
+					<div class="row">
+						<div class="grid col6">
+							<article class="themes">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src=" svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Theming bbPress Forums</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content theming">
+									<dl class="theming-bbp clearfix">
+										<dt>Free WP theme with default theme compatibility</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3200"><em class="percent">32%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2500"><em class="percent">25%</em></span></dd>
+										<dt>My custom theme/s with completely custom templates/CSS</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3150"><em class="percent">32%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2200"><em class="percent">22%</em></span></dd>
+										<dt>My custom theme/s using bbPress theme compatibility</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3200"><em class="percent">31.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4100"><em class="percent">41%</em></span></dd>
+										<dt>Commercial WP theme with custom bbPress CSS and/or template modifications</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2550"><em class="percent">25.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1400"><em class="percent">14%</em></span></dd>
+										<dt>Commercial WP theme with default theme compatibility</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2250"><em class="percent">22.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1900"><em class="percent">19%</em></span></dd>
+										<dt>Free WP theme with custom bbPress CSS and/or template modifications</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2100"><em class="percent">21%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1400"><em class="percent">14%</em></span></dd>
+										<dt>Other Option</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0200"><em class="percent">2%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0400"><em class="percent">4%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+						<div class="grid col6 end">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Preferred bbPress Theme Features</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="theme-features clearfix">
+										<dt>Responsive</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6950"><em class="percent">69.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w6600"><em class="percent">66%</em></span></dd>
+										<dt>Light and Fresh Design</dt>
+											<dd><em class="year">2015: </em> <span class="bar w5200"><em class="percent">52%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5800"><em class="percent">58%</em></span></dd>
+										<dt>Compatible with the latest bbPress version</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4900"><em class="percent">49%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5100"><em class="percent">51%</em></span></dd>
+										<dt>Responsive, mobile-first</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3900"><em class="percent">39%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2800"><em class="percent">28%</em></span></dd>
+										<dt>Translation-ready</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2700"><em class="percent">27%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2400"><em class="percent">24%</em></span></dd>
+										<dt>Mobile App</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0700"><em class="percent">7%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0600"><em class="percent">6%</em></span></dd>
+										<dt>Dark and Edgy Design</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0450"><em class="percent">4.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0600"><em class="percent">6%</em></span></dd>
+										<dt>RTL support</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0400"><em class="percent">4%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col12">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/cogs.svg" alt="cogs" onerror="this.src='svg/cogs.png'; this.onerror=null;">
+										<h3>bbPress-Specific Plugins Used</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content" id="activatedplugins">
+									<div class="grid col3">
+										<h4>Top 21 Plugins Mentioned</h4>
+										<ol>
+											<li>BuddyPress (24.55%)</li>
+											<li>GD bbPress Attachments (21.82%)</li>
+											<li>GD bbPress Tools (16.36%)</li>
+											<li>bbPress Enable TinyMCE Visual Tab (8.18%)</li>
+											<li>Not using bbPress-specific plugin (8.18%)</li>
+											<li>bbPress Notices (5.45%)</li>
+											<li>bbPress Private Replies (4.55%)</li>
+											<li>Custom/own bbPress Plugins (4.55%)</li>
+											<li>Private Groups (4.55%)</li>
+											<li>Akismet (4.55%)</li>
+											<li>bbPress String Swap (3.64%) - Old version</li>
+											<li>bbP Last Post (3.64%)</li>
+											<li>bbP Signature (3.64%)</li>
+											<li>bbPress Like Button (3.64%)</li>
+											<li>bbPress Sort Topics Replies (3.64%)</li>
+											<li>Yoast SEO (3.64%)</li>
+											<li>bbP style pack (2.73%)</li>
+											<li>bbPress - Report Content (2.73%)</li>
+											<li>Buddy-bbPress Support topic (2.73%)</li>
+											<li>rtMedia (2.73%)</li>
+											<li>WooCommerce (2.73%)</li>
+										</ol>
+									</div>
+									<div class="grid col3">
+										<h4>Other bbPress-specific Plugins</h4>
+										<ol>
+											<li>bbPress - Do Short Codes</li>
+											<li>bbPress Advanced Statistics</li>
+											<li>bbPress Canned Replies</li>
+											<li>bbPress Custom Reply Notifications</li>
+											<li>bbPress Genesis Extend</li>
+											<li>bbPress New Topics</li>
+											<li>bbPress Simple Advert Units</li>
+											<li>bbPress Topics for Posts</li>
+											<li>bbPress Votes</li>
+											<li>bbP Live Preview</li>
+											<li>Plus more in <a href="https://docs.google.com/spreadsheets/d/1-JZjSvg3oUEBgdKcaRdMc3qOHgdbd5ADNqXPt4U3D38/edit?usp=sharing">this spreadsheet.</a></li>
+										</ol><br/>
+										<h4>Other Compatible Plugins</h4>
+										<ol>
+											<li>Basic User Avatars</li>
+											<li>s2Member</li>
+											<li>Tapatalk for WordPress</li>
+											<li>Wangguard</li>
+											<li>Wordfence Security</li>
+											<li>WP User Avatar</li>
+											<li>10up Lazy Load</li>
+											<li>Achievements for WordPress</li>
+											<li>Advanced Custom Fields</li>
+											<li>amr users</li>
+											<li>Plus more in <a href="https://docs.google.com/spreadsheets/d/1-JZjSvg3oUEBgdKcaRdMc3qOHgdbd5ADNqXPt4U3D38/edit?usp=sharing">this spreadsheet.</a></li>
+										</ol><br/>
+									</div>
+									<div class="grid col6 end">
+										<figure>
+											<a href="plugins.html"><img src="images/plugins.jpg" alt="Visualization of bbPress plugins used" style="width:500px;height:auto" /></a>
+											<figcaption>Click on image above to view larger version.</figcaption>
+										</figure>
+									</div>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col6">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Contributed to bbPress Development</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content contribute-dev">
+									<dl class="contributed clearfix">
+										<dt>No</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7100"><em class="percent">71%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7300"><em class="percent">73%</em></span></dd>
+										<dt>Yes</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2900"><em class="percent">29%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2700"><em class="percent">27%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+							<article class="ways-contributed">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Ways Contributed to bbPress Development</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="contributions clearfix">
+										<dt>Helped out in bbPress forums </dt>
+											<dd><em class="year">2015: </em> <span class="bar w4400"><em class="percent">44%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w6700"><em class="percent">67%</em></span></dd>
+										<dt>bbPress Trac: Reported Bugs </dt>
+											<dd><em class="year">2015: </em> <span class="bar w3250"><em class="percent">32.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4300"><em class="percent">43%</em></span></dd>
+										<dt>Submitted translation/s of bbPress </dt>
+											<dd><em class="year">2015: </em> <span class="bar w1900"><em class="percent">19%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3100"><em class="percent">31%</em></span></dd>
+										<dt>Submitted a bbPress plugin in the WP plugin repository</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1450"><em class="percent">14.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1300"><em class="percent">13%</em></span></dd>
+										<dt>Joined in bbPress IRC/Slack dev chat</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1100"><em class="percent">11%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0700"><em class="percent">7%</em></span></dd>
+										<dt>bbPress Trac: Submitted patches</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1000"><em class="percent">10%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1700"><em class="percent">17%</em></span></dd>
+										<dt>Submitted a theme which supports bbPress in the WP theme repository</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0450"><em class="percent">4.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0200"><em class="percent">2%</em></span></dd>
+										<dt>Other Option</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0450"><em class="percent">4.5%</em></span></dd>
+										<dt>bbPress Trac: Tested patches</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0350"><em class="percent">3.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1100"><em class="percent">11%</em></span></dd>
+										<dt>Wrote article/s in bbPress Codex</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0200"><em class="percent">2%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0700"><em class="percent">7%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+						<div class="grid col6 end">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/globe.svg" alt="globe" onerror="this.src='svg/globe.png'; this.onerror=null;">
+										<h3>Signed Up to Contribute to bbPress Development</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content contribute">
+									<p><strong>18 respondents from 9 countries</strong> signed up to contribute. We will be contacting you soon. Thank you!</p>
+									<ul class="volunteers row">
+										<li class="icon united-states"> United States (8)</li>
+										<li class="icon united-kingdom"> United Kingdom (2)</li>
+										<li class="icon canada"> Canada (2)</li>
+										<li class="icon brazil"> Brazil</li>
+										<li class="icon czech-republic"> Czech Republic</li>
+										<li class="icon finland"> Finland</li>
+										<li class="icon greece"> Greece</li>
+										<li class="icon ukraine"> Ukraine</li>
+										<li class="icon united-arab-emirates"> United Arab Emirates</li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Devices Used to Access Forums</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="bbp-devices clearfix">
+										<dt>Desktop</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7650"><em class="percent">76.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7300"><em class="percent">73%</em></span></dd>
+										<dt>Laptop</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6850"><em class="percent">68.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4800"><em class="percent">48%</em></span></dd>
+										<dt>Smartphone</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6650"><em class="percent">66.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4600"><em class="percent">46%</em></span></dd>
+										<dt>Tablet</dt>
+											<dd><em class="year">2015: </em> <span class="bar w5050"><em class="percent">50.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2000"><em class="percent">20%</em></span></dd>
+										<dt>Television</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0000"><em class="percent">0</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0000"><em class="percent">0</em></span></dd>
+									</dl>
+								</div>
+							</article>
+							<div class="shadow-box">
+								<h3>Response Source @ Survey</h3>
+								<p class="shadow-box">Browser (93%) versus Mobile (7%) </p>
+								<h3>Browser Usage @ Survey</h3>
+								<p class="shadow-box">Chrome (39.4%), Unknown (36.6%), Safari (16.9%), iPhone (3.8%), iPad (2.8%), Opera Mini (0.5%)</p>
+							</div>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+				</div><!-- #features-participation  -->
+			</section><!-- .features-participation -->
+
+			<section class="row opinions-requests">
+				<header class="entry-header">
+					<h2 class="entry-title">Opinions &amp; Requests</h2>
+				</header><!-- .entry-header -->
+
+				<div id="opinions-requests" class="block">
+
+					<div class="row">
+						<div class="grid col6">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>bbPress Strengths/Opportunities</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="strengths clearfix">
+										<dt>Open-sourced</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7700"><em class="percent">77%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7400"><em class="percent">74%</em></span></dd>
+										<dt>Free</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7600"><em class="percent">76%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7800"><em class="percent">78%</em></span></dd>
+										<dt>bbPress is an official WordPress plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w7600"><em class="percent">76%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w6900"><em class="percent">69%</em></span></dd>
+										<dt>bbPress integrates seamlessly with WordPress and BuddyPress</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6800"><em class="percent">68%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w6700"><em class="percent">67%</em></span></dd>
+										<dt>Easy to set up</dt>
+											<dd><em class="year">2015: </em> <span class="bar w5600"><em class="percent">56%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5100"><em class="percent">51%</em></span></dd>
+										<dt>Compatible with other WP plugins</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4800"><em class="percent">48%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5100"><em class="percent">51%</em></span></dd>
+										<dt>bbPress is extensible</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4200"><em class="percent">42%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3700"><em class="percent">37%</em></span></dd>
+										<dt>bbPress lets you own your own data</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3950"><em class="percent">39.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3200"><em class="percent">32%</em></span></dd>
+										<dt>bbPress has community support</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3600"><em class="percent">36%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2300"><em class="percent">23%</em></span></dd>
+										<dt>Theme Compatibility</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3500"><em class="percent">35%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4600"><em class="percent">46%</em></span></dd>
+										<dt>Responsive</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3000"><em class="percent">30%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3100"><em class="percent">31%</em></span></dd>
+										<dt>Translation in your language</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1800"><em class="percent">18%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1500"><em class="percent">15%</em></span></dd>
+										<dt>Positive feedback from community</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0750"><em class="percent">7.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>Other Option</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0700"><em class="percent">7%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0500"><em class="percent">5%</em></span></dd>
+										<dt>User documentation has improved</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0650"><em class="percent">6.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+						<div class="grid col6 end">
+							<article class="weaknesses">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>bbPress Weaknesses/Threats</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="threats clearfix">
+										<dt>Not sure about the future of the plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6900"><em class="percent">69%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5400"><em class="percent">54%</em></span></dd>
+										<dt>Need more features added to the plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6300"><em class="percent">63%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5700"><em class="percent">57%</em></span></dd>
+										<dt>Lacking features as compared to traditional forum software</dt>
+											<dd><em class="year">2015: </em> <span class="bar w5750"><em class="percent">57.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w5800"><em class="percent">58%</em></span></dd>
+										<dt>Developers are all volunteers</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3100"><em class="percent">31%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2300"><em class="percent">23%</em></span></dd>
+										<dt>User documentation is not complete</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3050"><em class="percent">30.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3800"><em class="percent">38%</em></span></dd>
+										<dt>Performance</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2700"><em class="percent">27%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3300"><em class="percent">33%</em></span></dd>
+										<dt>Spam</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2450"><em class="percent">24.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2700"><em class="percent">27%</em></span></dd>
+										<dt>bbPress is not compatible with some themes</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2000"><em class="percent">20%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2300"><em class="percent">23%</em></span></dd>
+										<dt>Confusing for users to navigate</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2000"><em class="percent">20%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2000"><em class="percent">20%</em></span></dd>
+										<dt>Other Option</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1900"><em class="percent">19%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1900"><em class="percent">19%</em></span></dd>
+										<dt>Need phpdocs for developers</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1500"><em class="percent">15%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1400"><em class="percent">14%</em></span></dd>
+										<dt>bbPress is not compatible with some WP plugins</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1400"><em class="percent">14%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1800"><em class="percent">18%</em></span></dd>
+										<dt>Confusing to setup</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1200"><em class="percent">12%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1300"><em class="percent">13%</em></span></dd>
+										<dt>Translation in your language is not available</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0550"><em class="percent">5.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0500"><em class="percent">5%</em></span></dd>
+										<dt>Not what I expected</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0250"><em class="percent">2.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0600"><em class="percent">6%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col6">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Evaluated other Forums Software</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content forums-eval">
+									<dl class="evaluated clearfix">
+										<dt>Yes</dt>
+											<dd><em class="year">2015: </em> <span class="bar w8200"><em class="percent">82%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w8800"><em class="percent">88%</em></span></dd>
+										<dt>No</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1800"><em class="percent">18%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w1200"><em class="percent">12%</em></span></dd>
+									</dl>
+								</div>
+							</article>
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Other Forums Software Evaluated</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="forums-evaluated clearfix">
+										<dt>phpBB forums</dt>
+											<dd><em class="year">2015: </em> <span class="bar w6600"><em class="percent">66%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w7200"><em class="percent">72%</em></span></dd>
+										<dt>vbulletin forums</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4800"><em class="percent">48%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4000"><em class="percent">40%</em></span></dd>
+										<dt>SimplePress plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4150"><em class="percent">41.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4400"><em class="percent">44%</em></span></dd>
+										<dt>Vanilla forums</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3550"><em class="percent">35.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4300"><em class="percent">43%</em></span></dd>
+										<dt>MyBB</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2700"><em class="percent">27%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2400"><em class="percent">24%</em></span></dd>
+										<dt>Discourse</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1850"><em class="percent">18.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>Invision Forums</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1800"><em class="percent">18%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2200"><em class="percent">22%</em></span></dd>
+										<dt>Mingle Forums plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1700"><em class="percent">17%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2100"><em class="percent">21%</em></span></dd>
+										<dt>WP Forum Server plugin</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0650"><em class="percent">6.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>Kunena (Joomla)</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0650"><em class="percent">6.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0600"><em class="percent">6%</em></span></dd>
+										<dt>Simple Machine Forums</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0600"><em class="percent">6%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0800"><em class="percent">8%</em></span></dd>
+										<dt>Other Option</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0400"><em class="percent">4%</em></span></dd>
+										<dt>XenForo</dt>
+											<dd><em class="year">2015: </em> <span class="bar w0200"><em class="percent">2%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w0300"><em class="percent">3%</em></span></dd>
+									</dl>
+									<hr />
+									*<em>Other option</em>:
+									<p>None, Muut, FudForum, IP Board, miniBB, NodeBB, Phorum, PHP Fusion, Subdreamer, UseBB, Woltlab Burning Board, XMB2</p>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+						<div class="grid col6 end">
+							<article>
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/bar-chart.svg" alt="bar chart" onerror="this.src='svg/bar-chart.png'; this.onerror=null;">
+										<h3>Requested Improvements &amp; New Features</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content">
+									<dl class="feature-requests clearfix">
+										<dt>Attachments	</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4350"><em class="percent">43.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w4200"><em class="percent">42%</em></span></dd>
+										<dt>Ajaxification of Topics and Replies</dt>
+											<dd><em class="year">2015: </em> <span class="bar w4150"><em class="percent">41.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2600"><em class="percent">26%</em></span></dd>
+										<dt>Moderation tools in the front end</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3900"><em class="percent">39%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3400"><em class="percent">34%</em></span></dd>
+										<dt>Unread Replies</dt>
+											<dd><em class="year">2015: </em> <span class="bar w3300"><em class="percent">33%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3900"><em class="percent">39%</em></span></dd>
+										<dt>Quotes</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2650"><em class="percent">26.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w3100"><em class="percent">31%</em></span></dd>
+										<dt>Private Replies</dt>
+											<dd><em class="year">2015: </em> <span class="bar w2450"><em class="percent">24.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2300"><em class="percent">23%</em></span></dd>
+										<dt>Topic/Reply Ratings</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1850"><em class="percent">18.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2500"><em class="percent">25%</em></span></dd>
+										<dt>Resolved/Unresolved topic categories</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1850"><em class="percent">18.5%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2300"><em class="percent">23%</em></span></dd>
+										<dt>Other Option &ast;</dt>
+											<dd><em class="year">2015: </em> <span class="bar w1700"><em class="percent">17%</em></span></dd>
+											<dd><em class="year">2014: </em> <span class="past bar w2000"><em class="percent">20%</em></span></dd>
+									</dl>
+									<hr />
+									*<em>Other option</em>:
+									<ul>
+										<li>@mentions like BuddyPress</li>
+										<li>bbPress as blog post comments:
+											<ul>
+												<li>bbPress Topics for WordPress posts,</li>
+												<li>replace comments with Topic threads</li>
+												<li>WordPress comment as forum Topics</li>
+											</ul>
+										</li>
+										<li>Cover Photo: Upload Images to user profiles and make them appear easier like G_+ or Facebook</li>
+										<li>Custom Shortcodes: add limits</li>
+										<li>Development: More active, finish basics</li>
+										<li>Email: Reply by email, Use email gateway (e.g. Mailman), Users can sent group emails to other members</li>
+										<li>Extendability: Better integration with other "native" WordPress plugins</li>
+										<li>Merger: bbPress & BuddyPress merge as One Group. The BB's.</li>
+										<li>Notifications: Notifications settings like BuddyPress</li>
+										<li>Performance: Improve</li>
+										<li>Signatures: User signatures important in forums</li>
+										<li>Spam control: Better handling of spam users, Spam control</li>
+										<li>Subscription: allow notifications for new topics in each forum</li>
+										<li>Theming: Options for traditional forums look and feel, better reply styling, improve design, tags show beside topics</li>
+										<li>User Groups for forum members</li>
+										<li>User Management: Better ways, integration with WP user roles, country flags</li>
+										<li>Voting: Upvote/downvote comments, reddit-style</li>
+									</ul>
+								</div>
+							</article>
+						</div><!-- .col6 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="grid col12 clearfix">
+							<article class="comments">
+								<header>
+									<div class="panel-title">
+										<img class="fa" src="svg/comments-o.svg" alt="comments" onerror="this.src='svg/comments-o.png'; this.onerror=null;">
+										<h3>Comments about bbPress or Survey</h3>
+									</div>
+									<div class="no-show"></div>
+								</header>
+								<div class="panel-content clearfix">
+									<div id="survey-comments" class="grid col12">
+										<blockquote>We need more bee puns on the codex main page.</blockquote>
+										<blockquote>Keep up the great work!</blockquote>
+										<blockquote>bbPress is awesome. I would like to see some improvement on the default stylings. Creating custom templates and styles always seems like I have to take a lot away and start breaking it down before I can start adding my own, unique styles to blend it in with a theme.<br />I a bbPress-oriented child theme for Stargazer called Stargazer Colloquium (it's int the repo) and in the process of it, I was reminded of how "built up" the styles are with all the borders and lines. It almost feels as if bbPress is trying to cling to the old-fashioned look-and-feel of legacy forums. A modernized, but simple and light-weight stylesheet would go a long way toward making it more developer friendly while giving a fresh-modernized look out of the box. At the same time, if done well, it could continue to establish bbPress as a leading forum  software.</blockquote>
+										<blockquote>Make it more like a proper forum. Include latest unread posts in all forums on front page.</blockquote>
+										<blockquote>We love bbPress here at SignalHound.com... sure, it may have an issue here and there, but the value it brings in by letting us interact directly with our customers is priceless... oh yeah, and its FREE! Great for SEO, easily styled and configurable on the front end, adaptable to any theme... it really is great. Looking forward to future enhancements! </blockquote>
+										<blockquote>It's cool.</blockquote>
+										<blockquote>Thanks for all you're doing! I love bbPress :D</blockquote>
+										<blockquote>bbPress needs better integration with WP user roles to allow basic granular permissions (per role and per forum+children) built in and easy to access and config without unreliable 3rd party plugins, this was actually easier to accomplish before bbPress changed to dynamic roles...</blockquote>
+										<blockquote>Needs better support.</blockquote>
+										<blockquote>I use bbPress because it works with my WordPress customer base, but it needs to be more user friendly and provide more features more conventional forum softwares provide, these which ppl are used to.</blockquote>
+										<blockquote>I love it (bbPress) and am super excited to see how it develops.<br /> It's sometimes sad to see that bbPress doesn't seem (to my perhaps ignorant eye!) to get the attention it could from the dev team (not blaming, it's just the way it is) and if it's at all possible I think development should be sped up.<br /> Also, the web has changed and we all see that forums are not at all as popular as they once were. It would be great if bbPress could get ahead of the game and implement more modern features (more ajax immediate responses etc) and change what our idea of a forum is, before other software (Discourse for example) becomes the 'go to' for more modern developers and becomes the standard for the new generation of forums.<br /> Lastly, THANK YOU and keep up the good work!</blockquote>
+										<blockquote>Release 2.6</blockquote>
+										<blockquote>When I first start using bbPress (2012) I had a lot of problems with the conversion from Invision Forums. I still have big performance and other smaller issues (400.000 replies, 60.000 topics, 18.000 users)<br />We (bbPress fans) are waiting for 2.6 version.<br />I believe on all of you contributing bbPress... keep going!</blockquote>
+										<blockquote>I've been satisfied with bbPress. Thanks for the work that goes into it!</blockquote>
+										<blockquote>Great work, keep it up and stable! :)</blockquote>
+										<blockquote>So far I am really impressed with this plugin. I wanted to add some simple forums to my wordpress website without going down the whole dedicated forum route as well as replace WordPress comments with forum based comments. This seems to fit the bill quite nicely. I do wish there were a few more classic forum specific features, but I can easily work with what is currently there.</blockquote>
+										<blockquote>I like bbpress and it's good that you do these surveys.</blockquote>
+										<blockquote>I need more customiseble widgets for my landing page. Way to display what's going on in the forums.<br /> A widget I dream about: Last replys in forums with except and avatar. That can be ajusted to a specific number of replays.<br /> Thanks for all your hard word!</blockquote>
+										<blockquote>I am very happy with the constant development of bbPress and hope to eventually be able to become a core developer.</blockquote>
+										<blockquote>bbPress is an excellent plugin, imho it only lacks some light and activity around it. Bravo to the bbPress core team for the great work so far :)</blockquote>
+										<blockquote>I love bbPress, but some aspects of it are really behind the times. I really could use a full fledged shortcodes system. I know it supports a few now, but there are very few, if any, options we can add to them, which are really important for a lot of people. There is so much data that bbPress has that people want to use on their sites which we need shortcodes for. <br /> The only other thing I'd like to add is that bbPress should make styling a lot easier. Add a custom CSS section in the settings. Make it more responsive. Really, design is so important! The average user isn't able to work with bbPress or BuddyPress at all in this aspect.</blockquote>
+										<blockquote>just a good simple efficient product, but no enough time to go deeper in his dev... Michel as author of xili-language trilogy based on taxonomy and so compatible with bbPress. Cheers.</blockquote>
+										<blockquote>Keep developing/evolving.</blockquote>
+										<blockquote>I would like to see bbPress simplified and polished. It's almost as big as WordPress now. </blockquote>
+										<blockquote>bbPress is good stuff. Could have better end user docs, maybe a simple video or flowchart. It's easy for me but clients get confused sometimes or don't know what things are (ex super sticky posts). Theme compatibility could be improved for the forum root archive (site.com/forums)...many theme's content.php (or similar) show the excerpt on archives.</blockquote>
+										<blockquote>Mobile experience is essential.</blockquote>
+										<blockquote>Bottom line!..Awesome!!! :o)</blockquote>
+										<blockquote>bbpress needs to be a complete solution for forum including social and search engine optimization. At this time I find issues with making forum SEO friendly.</blockquote>
+										<blockquote>Congrats on the work so far! =)</blockquote>
+										<blockquote>First of all, I'm very thankful for your time you invest into the development and maintenance of bbPress, without getting paid for it. But. I've just tried to complete this short quick survey on my iPhone 5. It took me about 40 (!!!!!!!) minutes, lot of swearing and patience. This isn't right. It's impossible to use it on mobile devices without a lot of modifications. Mobile first is an imperative in 2015 and without it all the other efforts are worthless. Please consider creating a Premium/Commercial version, which people can pay for and use for their commercial projects. Thank you. Greetings from Vienna. Kind Regards, Martin</blockquote>
+										<blockquote>bbPress isn't responsive by default. This really needs to be a mobile-first plugin to ride the wave of the future sites powered by WordPress.</blockquote>
+										<blockquote>Great when it works. Just wish the extra plug-ins were up to date and didn't break my site when they aren't.</blockquote>
+										<blockquote>I have searched and searched for a plugin that would allow a membership site's users the option of bulk emailing one another (with all but the sender's email address invisible to other recipients) similar to the way Yahoo Groups email works. If that could work as an add-on to bbPress...awesome!</blockquote>
+										<blockquote>Nice. For first time I'm noticed for this survey. Keep up the hard work guys.</blockquote>
+										<blockquote>Please increase the overall font size. That is the number one complaint I see from people. Yes, I can change it, but there is no global way to do it - I have to copy and paste a ton of CSS. No one can read teeny 10px font, so I'm not sure why it doesn't inherit from the theme's body font size.</blockquote>
+										<blockquote>I have only installed bbPress ona couple of sites but so far have had no issues or complaints from clients. As a developer with experience coding in YABB PHPBB and a few others, I find bbPress very easy to customize.</blockquote>
+										<blockquote>Good job in conducting this survey and letting people voice their opinion. We all really appreciate your relentless work in bbPress over the years.<br /> In my opinion, the real power of BBPress is when combined as a unified solution along with Wordpress and/or Buddypress. That's what's the central difference from all other forum software.<br /> Therefore, I would really appreciate any future bbPress directions towards<br /> 1. Complete unification with WP and BP, especially with respect to (optionally) unifying comments with topic replies.<br /> 2. Speed and ease of navigation (ajaxification of things - we do live in a an era where speed and as less user qffort as possible prevail, don't we)<br /> 3. A better look-and-feel in order to attract forum owners who use other forum software, but feel like their users will have to learn again how to navigate/post/use the "new" forum. For this, conversion scripts from other forums should be also optimized.<br />Help us create! :)</blockquote>
+										<blockquote>Was much harder to set up than I thought it would be- had trouble customizing.</blockquote>
+										<blockquote>I love bbPress and WordPress because both are free. If someday bbPress grows like vBulletin or xenForo, I think everybody will choose bbPress as the default source for create forum.</blockquote>
+										<blockquote>We need more features on this great plugin!</blockquote>
+										<blockquote>I love bbPress, but if creating a forum plugin wasn't such a big job, I'd probably try to make my own, with an emphasis on being lightweight and simple.<br /> I understand and appreciate that you have to keep it working AND looking good on thousands of installs, which I'm sure is no easy task.</blockquote>
+										<blockquote>I like using bbPress, it works well. My concern is slow development cycle for fixes and new features. I currently use other plugins and some hacks to get much needed functionality.</blockquote>
+										<blockquote>Looking forward to more flexibility to the look/feel of the forums as well as more UI elements rather than text representations of everything.</blockquote>
+										<blockquote>Slow iteration of releases compared to eg WordPress and BuddyPress. But overall a great plugin and I hope its development goes from strength to strength. The easy integration with WordPress and ease of maintenance makes site management much easier compared with a WordPress + eg vBulletin install (which I have used previously).</blockquote>
+										<blockquote>Thanks for the survey and continued bbPress development.</blockquote>
+										<blockquote>Thank you for all the hard work! I really want to see bbPress do well.</blockquote>
+										<blockquote>In the past I've used most other open source forums and have built multiple sites using phpBB and a variety of forum extensions for Joomla. They were all pretty bad and very difficult to maintain over time. I also used bbPress early in its history and really did not like it, mainly for usability reasons. I've never found anything remotely decent as an alternative other than Discourse, which has other drawbacks. I realize bbPress has improved a lot. I've demoed it a few times in the past 1-2 years, and I would like to use it, but performance issues and future development are unclear.</blockquote>
+										<blockquote>Nice job but you guys should really improve bbPress's accessibility.</blockquote>
+										<blockquote>Hierarchical Forum and Category Layout theme - #1958 - PLEASE solve it ASAP :) Thanks for all the work ;) https://bbpress.trac.wordpress.org/ticket/1958</blockquote>
+										<blockquote>The survey is good. I may use it for my own plugins too. I like the questions. I find bbPress confusing to setup &amp; also lacking more documentation on how to setup.</blockquote>
+										<blockquote>bbPress isn't bad in general, I still believe it's the best way to start when you already own a WordPress webiste.<br />bbPress is still lean, mean and simple - it should stay that way.<br/>I feel like we could better wrap the current milestone up and release it already. I don't mind slower development. We don't need every month an update ( security updates aside ) but BuddyPress gets way more love and deserves to be online and active. bbPress is in the middle line. It's should be online because the idea and code is pretty - it just doesn't get any love anymore. Releasing two solid updates a year and closing around 100 tickets on each of those updates should be doable.<br />That's my opinion.</blockquote>
+										<blockquote>Great idea :-)</blockquote>
+										<blockquote>Thanks for your great forum plugin and putting this survey. One think I would like to see improved is to be more able to customize forums and topics, the way they are displayed.</blockquote>
+										<blockquote>bbPress miss a lot of Features, that i know from other forum software. It need to be more a real forum, not only a simple message board like actually is.</blockquote>
+										<blockquote>I love WordPress and don't know how much I like bbPress. I need that image functionality so much. I probably could add it with a plugin, but I've lost my mind. Need help with it.</blockquote>
+										<blockquote>I love bbPress, but I've been hesitant to use it fully until it supports the ability to replace comments with topic threads. I don't want to use an additional plugin for this. I prefer that this be built into bbPress as an option.</blockquote>
+										<blockquote>I've haven't really utilized bbPress yet but do have plans to implement in the future. I mostly have been exploring BuddyPress with sometimes adding forums via local dev site activating bbPress. What I have noticed on both Plugin Support Forums: Users Post Support Topics on BuddyPress/ vice verse....to only be directed to bbPress Support Forum and/or documentation. I see most wanting utilize both so I think it will be natural to merge the projects in terms of: Community Volunteers, Community Support &amp; Community Documentions instead Spreading The Project(s) ManPower so thin.</blockquote>
+										<blockquote>It's a great tool but needs improvement and most of the plugins available seems to be discontinued.<br />Needs more documentation too.<br />Thanks anyway. I will keep it for my community, took me weeks to setup and fix all styles and minor issues, but now is fine.</blockquote>
+										<blockquote>I think bbpress is great and I use it more than BuddyPress but like BuddyPress i think the lack of attachments/wp media integration is a big issue as well as basic forum features like most the ones in the question 24! as a sidenote and a extension of this issue the problem with the long term use of bbPress plugins... since a lot die off or are not popular but provide those features that bbPress lack, so i keep having issue with plugins breaking >_>  thanks again!</blockquote>
+										<blockquote>bbPress needs some of the features of other professional forum software. Else it's just a workaround for buying a real forum software.</blockquote>
+										<blockquote>Survey was clean and simple, bbpress need to improve a lot, it need to be more like a real forum (mybb) its lacking a lot of visuals and feature of a forum.</blockquote>
+
+									</div>
+								</div><!-- .col12 -->
+							</article>
+						</div>
+					</div><!-- .col12 -->
+				</div><!-- #opinions-requests -->
+			</section><!-- .opinions-request -->
+
+			<div class="buttons clearfix">
+				<a href="#" class="button" title="Back to the bbPress 2014 Survey Report">Back to the Survey Report</a>
+				<!-- <a href="#" onclick="scrollToTop();return false" class="button" title="Back to the top of the Survey Results Page">Top of Page &uarr; </a> -->
+			</div>
+		</main>
+
+		<div id="footer" class="row">
+			<footer class="col12">
+				<p>&copy; 2015 <a href="humans.txt" title="bbPress, Forums for WordPress">bbPress</a>.</p>
+			</footer>
+		</div><!-- #footer -->
+		<a href="#" class="scroll-to-top"> &#x25B2; </a>
+	</div><!-- #bbpress -->
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" ></script>
+	<script src="js/bbpreport.js"></script>
+</body>
+
+</html>
